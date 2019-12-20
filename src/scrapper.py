@@ -44,7 +44,7 @@ def main():
 
     # try connection MongoAtlas
     try:
-        client = 'mongodb+srv://FirstMongo:91796337@scrappers-qhxp9.mongodb.net'
+        client = 'mongodb+srv://FirstMongo:<password>@scrappers-qhxp9.mongodb.net'
         mongo = MongoAtlas(client, 'Scrappers', 'xiaomi')
     except Exception as error:
         print(f'Exceção encontrada durante a tentativa de conexão com MongodbAtlas: {error}')
